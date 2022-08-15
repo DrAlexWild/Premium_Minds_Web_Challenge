@@ -60,7 +60,7 @@ padding: 10px
   position:absolute;
   background-color:white;
   z-index:1;
-  top:10vh;
+  top:6vh;
 }
 #form_0 > p:nth-child(3) {
   position:absolute;
@@ -78,7 +78,7 @@ padding: 10px
 
   border-style: solid;
   border-color:white;
-  border-width: 25.2vh 64.2vw 0px 0px;
+  border-width: 25.2vh 63.7vw 0px 0px;
   z-index:0
 }
 
@@ -88,22 +88,21 @@ padding: 10px
   background-color:white;
 
   position:absolute;
-  bottom: 10.9vw;
+  top: 5vw;
   z-index:1;
 }
 
 #form_0 > p:nth-child(6) {
-  margin-left: 50px;
   background-color:white;
 
   position:absolute;
-  left: 60vw;
+  left: 25vw;
   bottom: 10.9vw;
   z-index:1
 
 }
 
-#form_0 > p:nth-child(7) {
+#form_0 > p:nth-child(8) {
   position:absolute;
   bottom:11vh;
   margin-left: 57px;
@@ -113,6 +112,17 @@ padding: 10px
   border-color:white;
   border-width: 14.2vh 54.65vw 0px 0px;
   z-index:0
+}
+
+#form_0 > p:nth-child(7) {
+  margin-left: 50px;
+  background-color:white;
+
+  position:absolute;
+  left: 60vw;
+  bottom: 10.9vw;
+  z-index:1
+
 }
 
 #guardar_btn{
@@ -176,4 +186,9 @@ padding: 10px
   width:142px;
   height:30px;
   padding-top:10px;
+}
+
+.edit_btn{
+  text-decoration: none;
+  color:black;
 }

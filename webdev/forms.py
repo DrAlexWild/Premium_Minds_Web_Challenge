@@ -9,4 +9,4 @@ class Utilizador_Form(ModelForm):
         model = Utilizador
         fields = '__all__'
 
-        widgets = {'nome': forms.HiddenInput()}
+        #widgets = {'nome': forms.HiddenInput()}

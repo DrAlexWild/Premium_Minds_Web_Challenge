@@ -12,12 +12,19 @@ function hideFunction() {
     } else {
       x.style.display = "none";
     }
-  x = y.children[1]
+  x = y.children[4]
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
+
+  x = y.children[1]
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
 }
 
 function hideFunction2() {
