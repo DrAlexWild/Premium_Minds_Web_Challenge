@@ -29,7 +29,7 @@ function hideFunction() {
 
 function hideFunction2() {
   var y = document.getElementById("form_0");
-  var x = y.children[4]
+  var x = y.children[7]
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
