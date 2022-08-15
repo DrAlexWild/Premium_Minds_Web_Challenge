@@ -1,0 +1,179 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  grid-template-columns: 20vw 80vw;
+  grid-template-areas:
+      'top top'
+      'side main';
+}
+
+.grid-item-1{
+    grid-area:top;
+    background-color:red;
+}
+.grid-item-2{
+    grid-area:main;
+    background-color:blue;
+}
+.grid-item-3{
+    grid-area:side;
+    background-color:green;
+
+    display: grid;
+    grid-template-rows: 90% 10%;
+    grid-template-areas:
+          'side_top'
+          'side_bottom';
+}
+.grid-item-3-1 {
+    padding: 20px;
+    padding-top: 40px;
+    grid-area: side_top;
+    background-color: orange;
+    text-align: center;
+  Overflow-y:scroll;
+}
+.grid-item-3-2 {
+    grid-area: side_bottom;
+    background-color: grey;
+    text-align: center;
+    font-size: 15px;
+}
+
+#logo{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.utilizador{
+padding: 10px
+}
+
+#id_palavra_passe:after{
+    content:" *";
+    color: red;
+}
+
+#form_0 > p:nth-child(2) {
+  margin-top:190px;
+  margin-left: 57px;
+  position:absolute;
+  background-color:white;
+  z-index:1;
+  top:10vh;
+}
+#form_0 > p:nth-child(3) {
+  position:absolute;
+  top:40vh;
+  margin-left: 57px;
+  background-color:white;
+  z-index:1;
+}
+#form_0 > p:nth-child(4) {
+  margin-left: 57px;
+  background-color:white;
+
+  position:absolute;
+  bottom:45vh;
+
+  border-style: solid;
+  border-color:white;
+  border-width: 25.2vh 64.2vw 0px 0px;
+  z-index:0
+}
+
+#form_0 > p:nth-child(5) {
+  margin-top:190px;
+  margin-left: 57px;
+  background-color:white;
+
+  position:absolute;
+  bottom: 10.9vw;
+  z-index:1;
+}
+
+#form_0 > p:nth-child(6) {
+  margin-left: 50px;
+  background-color:white;
+
+  position:absolute;
+  left: 60vw;
+  bottom: 10.9vw;
+  z-index:1
+
+}
+
+#form_0 > p:nth-child(7) {
+  position:absolute;
+  bottom:11vh;
+  margin-left: 57px;
+  background-color:white;
+
+  border-style: solid;
+  border-color:white;
+  border-width: 14.2vh 54.65vw 0px 0px;
+  z-index:0
+}
+
+#guardar_btn{
+  margin-left:64.5vw;
+  position:absolute;
+  bottom: 3vh;
+
+
+  border-color:lightblue;
+  background-color:lightblue;
+  border-radius:20px;
+
+  width:142px;
+  height:40px;
+
+}
+
+#btn0{
+    text-align:left;
+    position: absolute;
+    bottom: 220px;
+    left: 24.24vw;
+
+    width: 70vw;
+    border-color:orange;
+    background-color:orange
+}
+
+#btn1{
+    text-align:left;
+    position: absolute;
+    top: 140px;
+    left: 24.24vw;
+    width: 70vw;
+    border-color:orange;
+    background-color:orange
+}
+
+#form_0{
+
+}
+
+#main_utilizador{
+  padding-left:60px;
+  font-size:x-large
+}
+
+#cancelar_btn{
+  text-decoration: none;
+  color:black;
+  text-align:center;
+  margin-left:50.5vw;
+  position:absolute;
+  bottom: 3vh;
+
+
+  border-color:lightblue;
+  background-color:lightblue;
+  border-radius:20px;
+
+  width:142px;
+  height:30px;
+  padding-top:10px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'webdev/css/layout.css' %}">
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script  src="{% static 'webdev/scripts.js' %}"> </script>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1">
+            {% load static %}
+            <img src="{% static 'webdev/images/LOGO-WDR.svg' %}" id="logo">
+        </div>
+        <div class="grid-item-2">
+            <p id="main_utilizador">{{main_utilizador.nome}}</p>
+            <button onclick="hideFunction2()" id="btn0">Click Me</button>
+            <button onclick="hideFunction()" id="btn1">Click Me</button>
+            <form action="" method="POST" enctype="multipart/form-data" id="form_0">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <input type="submit" value="Novo" class="btn btn-success" id="guardar_btn" >
+            </form>
+        </div>
+        <div class="grid-item-3">
+            <div class="grid-item-3-1">
+                {% for utilizador in utilizadores %}
+                <div class="utilizador">
+                    <a class="edit_btn" href="{% url 'editar' utilizador.id %}">{{utilizador.nome}}</a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="grid-item-3-2">
+                <p>2019® Premium-minds.com</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
